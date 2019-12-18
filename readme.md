@@ -17,7 +17,13 @@ This project uses a super-basic Python script to interact with Internet Archive'
 Requirements:
  * Python 3, tested on version 3.7.4 but should work on other versions
 
-To find how many Flipnotes are archived for a user's Flipnote Studio ID (e.g. 97849B20AA34FFBC)
+To find how many Flipnotes are archived for a user's Hatena ID (e.g. id:flipnoteaardman)
+
+```
+python3 flipnote_fetcher.py flipnoteaardman
+```
+
+Or, to find how many Flipnotes are archived for a user's Flipnote Studio ID (e.g. 97849B20AA34FFBC)
 
 ```
 python3 flipnote_fetcher.py 97849B20AA34FFBC
@@ -39,4 +45,5 @@ We also aren't able to retrieve these Flipnotes in a format that's compatible wi
 
 * [James Daniel](https://jamesdaniel.dev) for the Python implementation
 * [Shutterbug2000](https://github.com/shutterbug2000) who discovered the Internet Archive backup
-* [Internet Archive](http://web.archive.org/) for hosting the actual backup
+* [IPG](https://github.com/invoxiplaygames) for the trick used to match Hatena IDs to Flipnote Studio IDs
+* [Internet Archive](http://web.archive.org/) for hosting the actual backup :)
