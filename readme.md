@@ -1,6 +1,6 @@
 ## Flipnote Fetcher
 
-Fetch Flipnotes from [Flipnote Hatena](http://ugomemo.hatena.ne.jp/thankyou)... in 2020!? 👀
+Fetch Flipnotes from [Flipnote Hatena](http://ugomemo.hatena.ne.jp/thankyou)... in 2021!? 👀
 
 ## Wait, What?
 
