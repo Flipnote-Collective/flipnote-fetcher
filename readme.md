@@ -17,13 +17,7 @@ This project uses a super-basic Python script to interact with Internet Archive'
 Requirements:
  * Python 3, tested on version 3.7.4 but should work on other versions
 
-To find how many Flipnotes are archived for a user's Hatena ID (e.g. id:flipnoteaardman)
-
-```
-python3 flipnote_fetcher.py flipnoteaardman
-```
-
-Or, to find how many Flipnotes are archived for a user's Flipnote Studio ID (e.g. 97849B20AA34FFBC)
+To find how many Flipnotes are archived for a user's Flipnote Studio ID (e.g. 97849B20AA34FFBC)
 
 ```
 python3 flipnote_fetcher.py 97849B20AA34FFBC
@@ -37,9 +31,9 @@ python3 flipnote_fetcher.py 97849B20AA34FFBC ./downloads
 
 ## Caveats
 
-Unfortunately, we're only able to fetch Flipnotes by Flipnote Studio ID. It’s not possible to search for a specific username or Hatena ID. If you’d like those features, you might want to wait for Austin Burk’s much more comprehensive [Flipnote Archive](https://twitter.com/FlipnoteArchive) project.
+Unfortunately, we're only able to fetch Flipnotes by Flipnote Studio ID. It’s not possible to search for a specific username, and since Hatena [removed old Hatena Star functionality in October of 2020](https://star.hatenastaff.com/entry/2020/10/13/171101), it's no longer possible to search by Hatena ID either. We also aren't able to retrieve these Flipnotes in a format that's compatible with Flipnote Studio on the DSi.
 
-We also aren't able to retrieve these Flipnotes in a format that's compatible with Flipnote Studio on the DSi.
+If you’d like those features, you might want to wait for Austin Burk’s much more comprehensive [Flipnote Archive](https://twitter.com/FlipnoteArchive) project.
 
 ## Credits
 
