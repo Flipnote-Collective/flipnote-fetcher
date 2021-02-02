@@ -8,7 +8,7 @@ After [Flipnote Hatena](http://ugomemo.hatena.ne.jp/thankyou) was closed down, N
 
 Or so we thought!
 
-Luckily for us, the amazing folks over at [Internet Archive](http://web.archive.org/) made a backup!
+Luckily for us, the amazing folks over at [Internet Archive](http://web.archive.org/) made a partial backup!
 
 This project uses a super-basic Python script to interact with Internet Archive's API and fetch all of the Flipnotes from a given user's Flipnote Studio ID. These Flipnotes can then be browsed and converted to video in [Flipnote Player](https://flipnote.rakujira.jp/) or dropped onto an SD card and viewed in Flipnote Studio 3D on a Nintendo 3DS.
 
@@ -33,7 +33,9 @@ python3 flipnote_fetcher.py 97849B20AA34FFBC ./downloads
 
 Unfortunately, we're only able to fetch Flipnotes by Flipnote Studio ID. It’s not possible to search for a specific username, and since Hatena [removed old Hatena Star functionality in October of 2020](https://star.hatenastaff.com/entry/2020/10/13/171101), it's no longer possible to search by Hatena ID either. We also aren't able to retrieve these Flipnotes in a format that's compatible with Flipnote Studio on the DSi.
 
-If you’d like those features, you might want to wait for Austin Burk’s much more comprehensive [Flipnote Archive](https://twitter.com/FlipnoteArchive) project.
+The archive we're pulling from also only contains a small portion of the data from Flipnote Hatena; around 476,300 Flipnotes out of 44,351,673 in total.
+
+If you’d like more features, and a complete dataset, and you might want to wait for Austin Burk’s much more comprehensive [Flipnote Archive](https://twitter.com/FlipnoteArchive) project.
 
 ## Credits
 
