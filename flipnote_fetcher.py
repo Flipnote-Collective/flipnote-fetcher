@@ -66,29 +66,33 @@ def get_fsid_from_hatena_id(hatena_id):
   else:
     return None
 
-target = argv[1]
-is_target_fsid = re.match('^(' + FSID_REGEX + ')$', target)
-
-if is_target_fsid:
-  target_fsid = target.upper()
+if len(argv) == 1:
+  print("Usage: python3 flipnote_fetcher.py <Flipnote Studio ID> Optional: <target directory>")
+  exit(1)
 else:
-  target_fsid = get_fsid_from_hatena_id(target)
-  if target_fsid:
-    print('Matched Hatena ID: {0} to Flipnote Studio ID: {1}'.format(target, target_fsid))
+  target = argv[1]
+  is_target_fsid = re.match('^(' + FSID_REGEX + ')$', target)
+
+  if is_target_fsid:
+    target_fsid = target.upper()
   else:
-    exit('Unable to match Hatena ID: {0} to a Flipnote Studio ID'.format(target))
+    target_fsid = get_fsid_from_hatena_id(target)
+    if target_fsid:
+      print('Matched Hatena ID: {0} to Flipnote Studio ID: {1}'.format(target, target_fsid))
+    else:
+     exit('Unable to match Hatena ID: {0} to a Flipnote Studio ID'.format(target))
 
-# Fetch Flipnotes list from Web Archive + parse it
-list_data = fetch_flipnote_list(target_fsid)
-column_order = list_data[0] # first item provides the column order for the rest of the list
-flipnote_list = list_data[1::]
+  # Fetch Flipnotes list from Web Archive + parse it
+  list_data = fetch_flipnote_list(target_fsid)
+  column_order = list_data[0] # first item provides the column order for the rest of the list
+  flipnote_list = list_data[1::]
 
-# Count Flipnotes found
-num_flipnotes = len(flipnote_list)
-if num_flipnotes > 0:
-  print("Found {0} Flipnotes for Flipnote Studio ID: {1} in Web Archive!".format(num_flipnotes, target_fsid))
-else:
-  print("Unable to find Flipnotes in Web Archive")
+  # Count Flipnotes found
+  num_flipnotes = len(flipnote_list)
+  if num_flipnotes > 0:
+    print("Found {0} Flipnotes for Flipnote Studio ID: {1} in Web Archive!".format(num_flipnotes, target_fsid))
+  else:
+    print("Unable to find Flipnotes in Web Archive")
 
 # Download if user wants to
 if len(argv) == 3:
