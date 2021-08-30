@@ -8,7 +8,7 @@ from sys import argv
 ARCHIVE_CDX_URL = "http://web.archive.org/cdx/search/cdx?matchType=prefix&filter=original:\S*.kwz$&output=json&url=jkz-dsidata.s3.amazonaws.com/kwz/{0}"
 ARCHIVE_RAW_DATA_URL = "http://web.archive.org/web/{0}id_/{1}"
 HATENA_STAR_URL = "https://s.hatena.ne.jp/{0}/"
-FSID_REGEX = "[0159]{1}[0-9A-F]{6}0[0-9A-F]{8}"
+FSID_REGEX = "[0159]{1}[0-9A-F]{15}"
 
 # Quick util to fetch a url and parse as text
 def fetch(url):
@@ -69,8 +69,8 @@ if len(argv) == 1:
   print("Usage: python3 flipnote_fetcher.py <Flipnote Studio ID> Optional: <target directory>")
   exit(1)
 else:
-  target = argv[1]
-  is_target_fsid = re.match('^(' + FSID_REGEX + ')$', target)
+  target = str(argv[1]).strip()
+  is_target_fsid = re.fullmatch(FSID_REGEX, target)
 
   if is_target_fsid:
     target_fsid = target.upper()
