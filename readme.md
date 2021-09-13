@@ -1,3 +1,7 @@
+# NOTE
+
+> **Pssst, if you don't know how to run Python scripts and are just here because you want to download Flipnotes from Hatena, check out https://gallery.kaeru.world/dsi for an easy-to-use web tool!**
+
 ## Flipnote Fetcher
 
 Fetch Flipnotes from [Flipnote Hatena](http://ugomemo.hatena.ne.jp/thankyou)... in 2021!? 👀
