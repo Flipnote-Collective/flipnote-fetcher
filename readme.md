@@ -43,9 +43,12 @@ The archive we're pulling from also only contains a small portion of the data fr
 
 If you’d like more features, and a complete dataset, and you might want to wait for Austin Burk’s much more comprehensive [Flipnote Archive](https://twitter.com/FlipnoteArchive) project.
 
+Additionally, lots of the Flipnotes unfortunately had audio issues introduced during Nintendo's conversion process to Flipnote Studio 3D format due to a bug on their end; for more details and a tool which does its best to correct the issue, see our [kwz-restoration](https://github.com/Flipnote-Collective/kwz-restoration) project. (Recent versions of Flipnote.js, as used in Flipnote Player and the Kaeru Gallery website, automatically try to spot and compensate for the issue in real-time)
+
 ## Credits
 
 * [James Daniel](https://jamesdaniel.dev) for the Python implementation
 * [Shutterbug2000](https://github.com/shutterbug2000) who discovered the Internet Archive backup
 * [IPG](https://github.com/invoxiplaygames) for the trick used to match Hatena IDs to Flipnote Studio IDs
 * [Internet Archive](http://web.archive.org/) for hosting the actual backup :)
+* [Meemo4556](https://github.com/meemo) and [SimonTime](https://github.com/SimonTime) for helping to figure out the audio issues.
