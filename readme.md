@@ -1,8 +1,8 @@
 # NOTE
 
-> **Pssst, if you don't know how to run Python scripts and are just here because you want to download Flipnotes from Hatena, check out Kaeru Gallery at https://gallery.kaeru.world/dsi for an easy-to-use web tool!**
->
-> **This lets you play Flipnotes in your browser without downloading or converting anything, with audio correction functionality, and you can also save the KWZ format Flipnote files to watch them on your 3DS.**
+> This has been deprecated in favour of the [Flipnote Archive](https://archive.sudomemo.net/) project, a comprehensive archive of Flipnote Hatena that you can view in a web browser.
+
+----
 
 ## Flipnote Fetcher
 
